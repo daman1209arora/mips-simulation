@@ -1,0 +1,10 @@
+lui $t1 1000
+srl $t1 $t1 16
+lui $t2 972
+srl $t2 $t2 16
+lui $t3 36
+srl $t3 $t3 16
+jr $t3 
+lui $t4 1
+j 100
+lui $t4 2

@@ -1,0 +1,7 @@
+lui $t2 20
+lui $t3 10
+srl $t2 $t2 16
+srl $t3 $t3 16
+add $t4 $t3 $t2
+add $t5 $t4 $t3
+add $t0 $t1 $t2

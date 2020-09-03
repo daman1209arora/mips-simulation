@@ -1,0 +1,3 @@
+lui $t0 1
+srl $t0 $t0 16
+sw $t0 0($zero)

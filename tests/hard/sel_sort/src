@@ -1,0 +1,28 @@
+lui $a0 500
+lui $s0 1
+lui $s1 4         
+srl $a0 $a0 16
+srl $s0 $s0 16
+srl $s1 $s1 16
+beq $t0 $a0 21
+add $t1 $t0 $zero
+add $t3 $t2 $zero
+lw $t4 0($t2)
+add $t5 $t2 $zero
+beq $t1 $a0 9
+lw $t6 0($t3)
+slt $t7 $t6 $t4
+beq $t7 $s0 1       
+j 18
+add $t5 $t3 $zero
+add $t4 $t6 $zero
+add $t1 $t1 $s0
+add $t3 $t3 $s1
+j 11 
+lw $s2 0($t5)
+lw $s3 0($t2)
+sw $s2 0($t2)
+sw $s3 0($t5)
+add $t0 $t0 $s0
+add $t2 $t2 $s1
+j 6

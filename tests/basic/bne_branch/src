@@ -1,0 +1,6 @@
+lui $s0 16
+srl $s0 $s0 16
+lui $s1 15
+srl $s1 $s1 16
+bne $s0 $s1 1
+add $s2 $s1 $s0

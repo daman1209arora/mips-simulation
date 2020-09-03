@@ -1,0 +1,5 @@
+lw $t2 0($zero)
+lw $t3 0($zero)
+add $t4 $t3 $t2
+add $t5 $t4 $t3
+add $t6 $t4 $t3

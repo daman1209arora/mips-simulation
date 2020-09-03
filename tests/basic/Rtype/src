@@ -1,0 +1,9 @@
+lui $t2 10
+srl $t2 $t2 16
+lui $t3 100
+srl $t3 $t3 16
+add $t4 $t2 $t3
+sub $t5 $t2 $t3
+or $t6 $t2 $t3
+and $t7 $t2 $t3
+slt $t8 $t2 $t3 

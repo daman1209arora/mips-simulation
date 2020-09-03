@@ -1,0 +1,13 @@
+lui $t2 5000
+lui $t5 4
+lui $t6 1
+srl $t2 $t2 16  
+srl $t5 $t5 16  
+srl $t6 $t6 16  
+beq $t2 $t3 5
+lw $t1 0($t4)
+add $t0 $t0 $t1
+add $t4 $t4 $t5
+add $t3 $t3 $t6
+j 6
+sw $t0 0($t4)

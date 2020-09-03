@@ -1,0 +1,9 @@
+lw $a0 0($zero)
+lw $a1 4($zero)
+jal 5
+sw $v0 8($zero)
+j 9
+add $t0 $a0 $zero
+add $t0 $t0 $a1
+add $v0 $t0 $zero
+jr $ra
